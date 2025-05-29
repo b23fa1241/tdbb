@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace tdbb
 {
-    public partial class Form2 : Form
+    public partial class Personal_information : UserControl
     {
-        public Form2()
+        public Personal_information()
         {
             InitializeComponent();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
