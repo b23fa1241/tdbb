@@ -34,9 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tDB_AnketDataSet = new tdbb.TDB_AnketDataSet();
-            this.studentFamilyBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.student_FamilyTableAdapter = new tdbb.TDB_AnketDataSetTableAdapters.Student_FamilyTableAdapter();
             this.studentFamilyIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ovogDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,9 +43,13 @@
             this.isPrimaryFamilyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.familyRelationIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentFamilyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tDB_AnketDataSet = new tdbb.TDB_AnketDataSet();
+            this.student_FamilyTableAdapter = new tdbb.TDB_AnketDataSetTableAdapters.Student_FamilyTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tDB_AnketDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentFamilyBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tDB_AnketDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -110,20 +111,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(450, 348);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // tDB_AnketDataSet
-            // 
-            this.tDB_AnketDataSet.DataSetName = "TDB_AnketDataSet";
-            this.tDB_AnketDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // studentFamilyBindingSource
-            // 
-            this.studentFamilyBindingSource.DataMember = "Student_Family";
-            this.studentFamilyBindingSource.DataSource = this.tDB_AnketDataSet;
-            // 
-            // student_FamilyTableAdapter
-            // 
-            this.student_FamilyTableAdapter.ClearBeforeFill = true;
             // 
             // studentFamilyIDDataGridViewTextBoxColumn
             // 
@@ -198,10 +185,34 @@
             this.studentIDDataGridViewTextBoxColumn.Name = "studentIDDataGridViewTextBoxColumn";
             this.studentIDDataGridViewTextBoxColumn.Width = 125;
             // 
+            // studentFamilyBindingSource
+            // 
+            this.studentFamilyBindingSource.DataMember = "Student_Family";
+            this.studentFamilyBindingSource.DataSource = this.tDB_AnketDataSet;
+            // 
+            // tDB_AnketDataSet
+            // 
+            this.tDB_AnketDataSet.DataSetName = "TDB_AnketDataSet";
+            this.tDB_AnketDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // student_FamilyTableAdapter
+            // 
+            this.student_FamilyTableAdapter.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(373, 455);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 33);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Нэмэх";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Family_information
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -210,8 +221,8 @@
             this.Name = "Family_information";
             this.Size = new System.Drawing.Size(538, 597);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tDB_AnketDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentFamilyBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tDB_AnketDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,5 +247,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn isPrimaryFamilyDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn familyRelationIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button1;
     }
 }
