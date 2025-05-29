@@ -40,5 +40,14 @@ namespace tdbb
             userControl.Dock = DockStyle.Fill;
             panel2.Controls.Add(userControl);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            panel2.Controls.Clear();
+
+            Skill userControl = new Skill();
+            userControl.Dock = DockStyle.Fill;
+            panel2.Controls.Add(userControl);
+        }
     }
 }

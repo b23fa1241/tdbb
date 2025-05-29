@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -36,7 +37,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +55,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 562);
             this.panel1.TabIndex = 0;
+            // 
+            // button6
+            // 
+            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button6.Location = new System.Drawing.Point(0, 361);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(200, 45);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "Нэмэлт асуулт";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -75,6 +85,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "Ур чадвар";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -124,16 +135,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(594, 562);
             this.panel2.TabIndex = 1;
-            // 
-            // button6
-            // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.Location = new System.Drawing.Point(0, 361);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(200, 45);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Нэмэлт асуулт";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
